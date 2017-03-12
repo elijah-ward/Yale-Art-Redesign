@@ -2,6 +2,7 @@ var express = require("express");
 var app = express();
 var router = express.Router();
 var path = __dirname + '/views/';
+var template_path = __dirname + '/templates/'
 
 /********************
 *		ROUTES		*
@@ -13,18 +14,26 @@ router.use(function (req,res,next) {
 });
 
 router.get("/",function(req,res){
-  res.sendFile(path + "index.html");
+	res.sendFile(path + "index.html");
 });
 
 router.get("/about",function(req,res){
-  res.sendFile(path + "about.html");
+	res.sendFile(path + "about.html");
 });
 
 router.get("/contact",function(req,res){
-  res.sendFile(path + "contact.html");
+	res.sendFile(path + "contact.html");
+});
+
+router.get("/showcase", function(req,res){
+	res.sendFile(path + "showcase.html")
 });
 
 app.use("/",router);
+
+
+app.use(express.static('static'));
+app.use("/static", express.static('static'));
 
 app.use("*",function(req,res){
   res.sendFile(path + "404.html");
