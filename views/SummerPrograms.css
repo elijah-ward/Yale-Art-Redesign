@@ -1,0 +1,152 @@
+/* -------------------- GENERAL -------------------- */
+
+html {
+	min-height:100%;
+}
+
+body {
+	min-height:100%;
+	min-width:100%;
+
+	font-size: 100%;
+	color:#04356b;
+	font-family: PT, serif;
+}
+
+/* -------------------- HEADER -------------------- */
+
+#Yale-header {
+	min-height: 15vh;
+	max-height: 15vh;
+
+	box-shadow: 0 0 30px black;
+
+    position:relative;
+	z-index: 1;
+}
+
+#Yale-header-center {
+	min-height: 15vh;
+	max-height: 15vh;
+
+	background-color:white;
+	color:#04356b;
+
+	font-size: 200%;
+	font-weight: bold;
+
+	text-align: center;
+
+	padding-top:5.5vh;
+
+}
+
+#Yale-header-right {
+	min-height: 15vh;
+	max-height: 15vh;
+
+	background-color:white;
+	color:#04356b;
+
+	font-size: 125%;
+	font-weight: bold;
+	text-transform: capitalize;
+
+	text-align: right;
+	padding-top:6.5vh;
+}
+
+#Yale-header-left {
+
+	background-color:white;
+
+	min-height: 15vh;
+	max-height: 15vh;
+}
+
+#Yale-header-logo {
+	min-height: 14vh;
+	max-height: 14vh;
+
+	/* Don't resize the logo on width variation. */
+
+	padding-top:1vh;
+}
+
+/* ---------- SUB-HEADER ---------- */
+
+#Yale-sub-header {
+	min-height: 5vh;
+	max-height: 5vh;
+
+	box-shadow: 0 0 15px black;
+
+	font-size: 150%;
+	font-weight: bold;
+
+	text-align: center;
+	padding-top:1.5vh;
+}
+
+/* -------------------- CORE -------------------- */
+
+#Yale-core {
+	min-height: 70vh;
+	max-height: 70vh;
+	min-width: 100vw;
+	max-width: 100vw;
+	
+    position:relative;
+	z-index: 0;
+}
+
+#Yale-core-left {
+	min-height: 70vh;
+	max-height: 70vh;
+}
+
+.fixed-panel {
+  min-height: 60vh;
+  max-height: 60vh;
+  overflow-y: scroll;
+}
+
+#Yale-core-right {
+	min-height: 70vh;
+	max-height: 70vh;
+}
+
+#Yale-core-right-image {
+	min-height: 70vh;
+	max-height: 70vh;
+
+	/* Manage horizontal rezise/crop */
+}
+
+/* -------------------- FOOTER -------------------- */
+
+#Yale-footer {
+	min-height: 10vh;
+	max-height: 10vh;
+	min-width: 100vw;
+	max-width: 100vw;
+	
+	box-shadow: 0 0 30px black;
+
+    position:relative;
+	z-index: 1;
+}
+
+#Yale-footer-element {
+	min-height: 10vh;
+	max-height: 10vh;
+
+	background-color:white;
+	color:#04356b;
+
+	font-size: 125%;
+	font-weight: bold;
+
+	text-align: center;
+	padding-top:4vh;
+}
