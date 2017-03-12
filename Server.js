@@ -29,6 +29,10 @@ router.get("/showcase", function(req,res){
 	res.sendFile(path + "showcase.html")
 });
 
+router.get("/ArtsHomePage", function(req,res){
+	res.sendFile(path + "ArtsHomePage.html")
+});
+
 app.use("/",router);
 
 
