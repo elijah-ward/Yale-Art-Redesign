@@ -24,7 +24,7 @@ In order to create a page, create a new file within the views folder. Then you m
 
 The contents of every bootstrap page needs to be placed within the container div like so:
 
-```
+```html
 <div class="container-fluid">
 
 <!-- YOUR CONTENT HERE -->
@@ -40,13 +40,13 @@ Our header template should be present on every page according to our design. In 
 
 1. Inside of the container div, place a div exactly like this:
 
-```
+```html
 <div id="header"></div>
 ```
 
 2. Include the script for loading our templates inside the <head> tag of your page:
 
-```
+```html
 <script src="/static/js/loadTemplates.js"></script>
 ```
 
@@ -65,7 +65,7 @@ To do so you can just put the html in a file inside the templates folder, only t
 
 After doing this you can edit the /static/js/loadTemplates.js script to load your html into a div with an id of your choosing using jQuery. This is how we do it for the header:
 
-```
+```javascript
 $(document).ready(function(){
 	$('#header').load("/static/templates/header.html");
 });
@@ -73,7 +73,7 @@ $(document).ready(function(){
 
 ...And we use this code in our html page by both including the /static/js/loadTemplates.js script in the head of our target html page and the div with the id we've chosen in the location we want to see that template loaded into.
 
-```
+```html
 <div id="yourChosenID"></div>
 ```
 
@@ -84,7 +84,7 @@ $(document).ready(function(){
 
 Once you've created a bootstrap html page, you can make it accessible to the website address by adding a route to your html file on the server. It's done as follows:
 
-```
+```javascript
 #Server.js
 
 router.get("/about",function(req,res){
