@@ -3,26 +3,26 @@ A redesign of the Yale Art department website. Group project for CS4474: Human C
 
 ## Running the App
 
-1 Install node if you haven't already. (npm comes with node)
+1. Install node if you haven't already. (npm comes with node)
 
-2 Navigate to the root of our repository that you have cloned from github
+2. Navigate to the root of our repository that you have cloned from github
 
-3 Run ```npm install``` in your terminal in order to download all dependencies for our app.
+3. Run ```npm install``` in your terminal in order to download all dependencies for our app.
 
 **Note that if you are a user of git bash, many command line tools don't get automatically added to the path for this terminal. I suggest finding a better terminal like powershell for windows.**
 
-4 Run ```npm start``` in your terminal to start the server
+4. Run ```npm start``` in your terminal to start the server
 
-5 Open your browser and type ```localhost:3000``` into the address bar
+5. Open your browser and type ```localhost:3000``` into the address bar
 
-6 You should now see the site. You can keep it running while making changes to your html pages and simply refresh the page to see your changes.
+6. You should now see the site. You can keep it running while making changes to your html pages and simply refresh the page to see your changes.
 
 ## Workflow
 
 ### Create a Page
 In order to create a page, create a new file within the views folder. Then you must add a route to the server for your page. More on this below. 
 
-The contents of every bootstrap page needs to be placed within the container div
+The contents of every bootstrap page needs to be placed within the container div like so:
 
 ```
 <div class="container-fluid">
@@ -38,13 +38,13 @@ You can also use the "container" class for this, to see the difference please re
 
 Our header template should be present on every page according to our design. In order to add it to the top of your page do the following:
 
-1 Inside of the container div, place a div exactly like this:
+1. Inside of the container div, place a div exactly like this:
 
 ```
 <div id="header"></div>
 ```
 
-2 Include the script for loading our templates inside the <head> tag of your page:
+2. Include the script for loading our templates inside the <head> tag of your page:
 
 ```
 <script src="/static/js/loadTemplates.js"></script>
@@ -53,6 +53,9 @@ Our header template should be present on every page according to our design. In 
 Once you've done these two things you should see the header loading in the proper location.
 
 Remember that you must be viewing the website on localhost:3000 with the server running in order to see this. 
+
+
+
 
 ### Create a template
 
@@ -73,6 +76,9 @@ $(document).ready(function(){
 ```
 <div id="yourChosenID"></div>
 ```
+
+
+
 
 ### Adding a Route for Your Page
 
