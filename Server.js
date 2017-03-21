@@ -55,9 +55,9 @@ router.get("/Programs", function(req,res){
 // 	res.sendFile(path + "FilmAndMovieMakingProgram.html")
 // });
 
-// router.get("/GraphicDesignProgram", function(req,res){
-// 	res.sendFile(path + "GraphicDesignProgram.html")
-// });
+router.get("/GraphicDesignProgram", function(req,res){
+	res.sendFile(path + "GraphicDesignProgram.html")
+});
 
 router.get("/SummerPrograms", function(req,res){
 	res.sendFile(path + "SummerPrograms.html")
