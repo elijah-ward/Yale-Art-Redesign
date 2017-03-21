@@ -33,6 +33,36 @@ router.get("/ArtsHomePage", function(req,res){
 	res.sendFile(path + "ArtsHomePage.html")
 });
 
+/* -------------------- PROGRAMS --------------------- */
+
+router.get("/Programs", function(req,res){
+	res.sendFile(path + "ProgramsHomePage.html")
+});
+
+// router.get("/SculptureProgram", function(req,res){
+// 	res.sendFile(path + "SculptureProgram.html")
+// });
+
+// router.get("/PaintingProgram", function(req,res){
+// 	res.sendFile(path + "PaintingProgram.html")
+// });
+
+// router.get("/PhotographyProgram", function(req,res){
+// 	res.sendFile(path + "PhotographyProgram.html")
+// });
+
+// router.get("/FilmAndMovieMakingProgram", function(req,res){
+// 	res.sendFile(path + "FilmAndMovieMakingProgram.html")
+// });
+
+// router.get("/GraphicDesignProgram", function(req,res){
+// 	res.sendFile(path + "GraphicDesignProgram.html")
+// });
+
+router.get("/SummerPrograms", function(req,res){
+	res.sendFile(path + "SummerPrograms.html")
+});
+
 /* -------------------- ADMISSION -------------------- */
 
 router.get("/Admission", function(req,res){

@@ -1,0 +1,75 @@
+/* -------------------- GENERAL -------------------- */
+
+html {
+	min-height:100%;
+}
+
+body {
+	min-height:100%;
+	min-width:100%;
+
+	font-size: 100%;
+	color:#04356b;
+	font-family: PT, serif;
+}
+
+/* -------------------- CORE -------------------- */
+
+#Yale-core {
+	min-height: 75vh;
+	max-height: 75vh;
+	min-width: 100vw;
+	max-width: 100vw;
+	
+    position:relative;
+	z-index: 0;
+}
+
+#Yale-core-element, #Yale-core-first-element, #Yale-core-last-element{
+	min-height: 75vh;
+	max-height: 75vh;
+
+	font-size: 150%;
+
+	background-color:#04356b;
+	color:white;
+
+	text-align: center;
+
+	padding-top:34vh;
+}
+
+#Yale-core-first-element, #Yale-core-element{
+	border-width: 0.1vw;
+	border-color: white;
+	border-right-style: solid;
+}
+
+/* -------------------- FOOTER -------------------- */
+
+#Yale-footer {
+	min-height: 10vh;
+	max-height: 10vh;
+	min-width: 100vw;
+	max-width: 100vw;
+	
+	box-shadow: 0 0 30px black;
+
+    position:relative;
+	z-index: 1;
+}
+
+#Yale-footer-element {
+
+	min-height: 10vh;
+	max-height: 10vh;
+
+	background-color:white;
+	color:#04356b;	
+
+	font-size: 125%;
+	font-weight: bold;
+
+	text-align: center;
+	padding-top:4vh;
+}
