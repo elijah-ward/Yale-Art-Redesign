@@ -33,6 +33,30 @@ router.get("/ArtsHomePage", function(req,res){
 	res.sendFile(path + "ArtsHomePage.html")
 });
 
+/* -------------------- ADMISSION -------------------- */
+
+router.get("/Admission", function(req,res){
+	res.sendFile(path + "AdmissionHomePage.html")
+});
+
+router.get("/AdmissionGeneralRequirements", function(req,res){
+	res.sendFile(path + "AdmissionGeneralRequirements.html")
+});
+
+router.get("/AdmissionSpecificRequirements", function(req,res){
+	res.sendFile(path + "AdmissionSpecificRequirements.html")
+});
+
+router.get("/AdmissionFinancialAid", function(req,res){
+	res.sendFile(path + "AdmissionFinancialAid.html")
+});
+
+router.get("/AdmissionApplication", function(req,res){
+	res.sendFile(path + "AdmissionApplication.html")
+});
+
+/* --------------------------------------------------- */
+
 app.use("/",router);
 
 
