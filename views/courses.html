@@ -26,6 +26,7 @@
    <body onload="createTable()">
      <div class="container-fluid">
        <div id="header"></div>
+
        <div>
          <nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
            <ul class="nav navbar-nav">
@@ -38,6 +39,7 @@
          </nav>
        </div>
        <br/>
+
        <div class="jumbotron">
          <br>
          <table padding="5%">
@@ -46,6 +48,7 @@
            </td>
 
            <td style="padding:5%">
+
              <div class="dropdown" style="height:50%">
                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">All Programs
                  <span class="caret"></span></button>
@@ -59,9 +62,9 @@
                  </ul>
                </div>
              </td>
-             </table>
+           </table>
 
-         <table id="myTable" style="width:65%">
+         <table id="myTable" >
            <tr class="header">
              <th style="width:15%;">Course Code</th>
              <th style="width:40%;">Course Name</th>
@@ -69,9 +72,9 @@
              <th style="width:25%">Instructor</th>
            </tr>
          </table>
+         <div id='rightsidepanel'>This is some test content</div>
          </div>
      </div>
-     <p id = "test">"Click and I disappear"</p>
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src = "https://code.jquery.com/jquery.js"></script>
 
@@ -80,6 +83,7 @@
       <script src = "js/bootstrap.min.js"></script>
       <script src = "../static/js/coursesdatabase.js"></script>
       <script type="text/javascript" src="../static/js/courses.js"></script>
+      <script src="jquery.slidereveal.min.js">
 
    </body>
 </html>

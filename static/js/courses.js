@@ -25,7 +25,7 @@ function createTable() {
 
   var table = document.getElementById('myTable');
   for (i = 1; i < coursesdatabase.courses.length; i++) {
-    var row = table.insertRow(1);
+    var row = table.insertRow(-1);
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
     var cell3 = row.insertCell(2);
@@ -37,8 +37,19 @@ function createTable() {
   }
 }
 
-$(document).ready(function() {
+/*$(document).ready(function() {
   $("div.jumbotron > table > tbody").click(function() {
     alert("Works");
+    alert(this.rowIndex);
+    alert($(this).index());
   });
+});*/
+
+$(function() {
+    // use event delegation
+    $(document).on('click','#myTable tr', function() {
+        var index = $(this).index();
+        alert(index); // jQuery way
+        document.getElementById("rightsidepanel").innerHTML = coursesdatabase.courses[index].description;
+    });
 });
