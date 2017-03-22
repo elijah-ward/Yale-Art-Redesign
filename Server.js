@@ -33,6 +33,10 @@ router.get("/ArtsHomePage", function(req,res){
 	res.sendFile(path + "ArtsHomePage.html")
 });
 
+router.get("/courses", function(req,res){
+  res.sendFile(path + "courses.html")
+});
+
 app.use("/",router);
 
 
