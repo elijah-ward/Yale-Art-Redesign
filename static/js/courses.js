@@ -37,19 +37,12 @@ function createTable() {
   }
 }
 
-/*$(document).ready(function() {
-  $("div.jumbotron > table > tbody").click(function() {
-    alert("Works");
-    alert(this.rowIndex);
-    alert($(this).index());
-  });
-});*/
 
 $(function() {
     // use event delegation
     $(document).on('click','#myTable tr', function() {
         var index = $(this).index();
-        alert(index); // jQuery way
-        document.getElementById("rightsidepanel").innerHTML = coursesdatabase.courses[index].description;
+        document.getElementById("course_info").innerHTML = coursesdatabase.courses[index].courseCode + ": " + coursesdatabase.courses[index].courseName;
+        document.getElementById("course_description").innerHTML = coursesdatabase.courses[index].description;
     });
 });
