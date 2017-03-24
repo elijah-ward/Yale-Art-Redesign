@@ -1,4 +1,5 @@
 var express = require("express");
+var morgan = require("morgan");
 var app = express();
 var router = express.Router();
 var path = __dirname + '/views/';
@@ -7,11 +8,6 @@ var template_path = __dirname + '/templates/'
 /********************
 *		ROUTES		*
 *********************/
-
-router.use(function (req,res,next) {
-  console.log("/" + req.method);
-  next();
-});
 
 router.get("/",function(req,res){
 	res.sendFile(path + "index.html");
@@ -25,8 +21,8 @@ router.get("/contact",function(req,res){
 	res.sendFile(path + "contact.html");
 });
 
-router.get("/showcase", function(req,res){
-	res.sendFile(path + "showcase.html")
+router.get("/ArtShowcase", function(req,res){
+	res.sendFile(path + "ArtShowcase.html")
 });
 
 router.get("/ArtsHomePage", function(req,res){
@@ -88,10 +84,13 @@ router.get("/AdmissionApplication", function(req,res){
 /* --------------------------------------------------- */
 
 app.use("/",router);
+app.use(morgan('tiny'));
 
 
 app.use(express.static('static'));
 app.use("/static", express.static('static'));
+
+app.use("/static", express.static('/node_modules/sequencejs'));
 
 app.use("*",function(req,res){
   res.sendFile(path + "404.html");
