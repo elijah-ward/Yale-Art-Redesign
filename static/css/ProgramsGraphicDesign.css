@@ -149,29 +149,3 @@ body {
 
 	z-index: 2;
 }
-
-/* -------------------- FOOTER -------------------- */
-
-#Yale-footer {
-	min-height: 10vh;
-	max-height: 10vh;
-	
-	box-shadow: 0 0 30px black;
-
-    position:relative;
-	z-index: 4;
-}
-
-#Yale-footer-element {
-	min-height: 10vh;
-	max-height: 10vh;
-
-	background-color:white;
-	color:#04356b;
-
-	font-size: 125%;
-	font-weight: bold;
-
-	text-align: center;
-	padding-top:4vh;
-}

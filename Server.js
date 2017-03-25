@@ -31,7 +31,7 @@ router.get("/ArtsHomePage", function(req,res){
 
 /* -------------------- PROGRAMS --------------------- */
 
-router.get("/Programs", function(req,res){
+router.get("/ProgramsHomePage", function(req,res){
 	res.sendFile(path + "ProgramsHomePage.html")
 });
 
@@ -51,8 +51,8 @@ router.get("/Programs", function(req,res){
 // 	res.sendFile(path + "FilmAndMovieMakingProgram.html")
 // });
 
-router.get("/GraphicDesignProgram", function(req,res){
-	res.sendFile(path + "GraphicDesignProgram.html")
+router.get("/ProgramsGraphicDesign", function(req,res){
+	res.sendFile(path + "ProgramsGraphicDesign.html")
 });
 
 router.get("/SummerPrograms", function(req,res){
@@ -61,7 +61,7 @@ router.get("/SummerPrograms", function(req,res){
 
 /* -------------------- ADMISSION -------------------- */
 
-router.get("/Admission", function(req,res){
+router.get("/AdmissionHomePage", function(req,res){
 	res.sendFile(path + "AdmissionHomePage.html")
 });
 
@@ -82,6 +82,11 @@ router.get("/AdmissionApplication", function(req,res){
 });
 
 /* --------------------------------------------------- */
+
+
+router.get("/Test", function(req,res){
+	res.sendFile(path + "test.html") /* Test -erase- */
+});
 
 app.use("/",router);
 app.use(morgan('tiny'));
