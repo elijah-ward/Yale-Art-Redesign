@@ -1,86 +1,87 @@
-Sequence.js [![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=IanLunn&url=https://github.com/IanLunn/Sequence&title=Sequence&language=english&tags=github&category=software) [![Join the chat at https://gitter.im/IanLunn/Sequence](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/IanLunn/Sequence?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-=====================
+# Basic - Sequence.js Theme
 
-> The responsive CSS animation framework for creating unique sliders, presentations, banners, and other step-based applications.
+> A basic theme that slides from side to side. A title and subtitle slide in from the top and bottom, and a button appears with a wobble effect
 
-Sequence.js provides all of the JavaScript functionality you need for step-based applications such as sliders and presentations, allowing you to concentrate on producing your content with style.
+This theme is powered by [Sequence.js](http://sequencejs.com/) - The responsive CSS animation framework for creating unique sliders, presentations, banners, and other step-based applications.
 
-Easily add transitions using the `.seq-in` and `.seq-out` CSS classes automatically added via Sequence.js to style how your slides/steps and content animate.
+Theme URL: [http://sequencejs.com/themes/basic/](http://sequencejs.com/themes/basic/)
 
-Find out how Sequence.js works in the [Introduction theme](http://ianlunn.github.io/Sequence/) or for more details, head to the [documentation](http://sequencejs.com/documentation/).
 
-See the [introduction](http://ianlunn.github.io/Sequence/) and [ready-made themes](http://www.sequencejs.com/themes/).
-
-## Features
-
-- Rapid development of animated step-based applications using CSS
-- Fully supports responsive design
-- Supported on mobile, tablet, and desktop devices
-- No limitations on CSS, HTML, and workflow you can use
-- Animate canvas and content
-- Hardware acceleration (for smooth animation even on mobile devices)
-- Touch support via [Hammer.js](http://eightmedia.github.io/hammer.js/)
-- Auto play
-- Easy-to-add next/previous/pause buttons and pagination
-- Preloader via [ImagesLoaded](http://imagesloaded.desandro.com/)
-- Hash tag support
-- Keyboard navigation
-- 30+ options and API for custom functionality
-- Top quality [documentation](http://sequencejs.com/documentation/)
-- Supports all major browsers with a fallback mode for legacy browsers ([detailed browser support](http://sequencejs.com/developers/browser-support/))
-- [Ready-made themes](http://sequencejs.com/themes/) available
-- [Yeoman generator](https://github.com/IanLunn/generator-sequence) available for quick scaffolding of themes
-
-### Browser Support
-
-Sequence.js is supported in modern browsers on major platforms, with a [fallback theme](http://www.sequencejs.com/documentation/#browser-support-and-fallback-mode) for Internet Explorer 8 and 9, and other older browsers that don't support CSS transitions.
-
-[See Browser Support in more detail](http://www.sequencejs.com/developers/browser-support/).
+Author: [Ian Lunn](http://ianlunn.co.uk/) - [GitHub](https://github.com/IanLunn) | [Twitter](https://twitter.com/IanLunn) | [Email](mailto:info@sequencejs.com)
 
 ## Getting Started
 
-To get started [download](http://sequencejs.com/download/) Sequence.js and then head to the [documentation](http://www.sequencejs.com/documentation/). If you'd like to contribute to Sequence.js development, please see the [contributing guidelines](https://github.com/IanLunn/Sequence/blob/master/CONTRIBUTING.md).
+To add a Sequence.js theme to your web page, complete the following:
 
-### Download
-
-- [Download Sequence.js](http://sequencejs.com/download/)
-
-Sequence.js can also be installed using the [Bower](http://bower.io/) command:
-
-```
-bower install sequencejs
+1. Download and unzip your theme
+2. Move the `basic` folder to the same folder as the page you'd like the Sequence.js theme to appear on
+3. Add the theme's stylesheet within the `<head></head>` tags on your page, below existing stylesheets. For example:
+```html
+<link rel="stylesheet" href="basic/css/sequence-theme.basic.css" />
 ```
 
-or [NPM](https://www.npmjs.org/):
+4. From `basic/index.html`, copy everything inside the `<body></body>` tags, then paste into the page you'd like the theme to appear on.
+5. From `basic/index.html`, copy any `<script></script>` elements found toward the bottom of the page and paste just before the closing `</body>` tag. This should include a reference to the Sequence.js library, its third-party dependencies, and the theme's options, for example:
+```html
+<script src="basic/scripts/imagesloaded.pkgd.min.js"></script>
+<script src="basic/scripts/hammer.min.js"></script>
+<script src="basic/scripts/sequence.min.js"></script>
+<script src="basic/scripts/sequence-theme.basic.js"></script>
+```
+
+6. Save your file and view in the browser. You're done!
+
+### Customizing a Theme
+
+To customize how a theme behaves, its Sequence.js options can be changed in `basic/scripts/sequence-theme.basic.js`. See Options in the [documentation](http://www.sequencejs.com/documentation/#options).
+
+To customize how a theme looks and how its step's transition, refer to the theme's stylesheet: `basic/css/sequence-theme.basic.css`.
+
+It is recommended to read [Setting Up a Theme](http://www.sequencejs.com/documentation/#setting-up-a-theme) in the documentation for an overview of how transitions are applied to Sequence.js steps.
+
+## Using Grunt.js to Develop a Theme
+
+If you are familiar with Grunt.js, you can use it to automate common development tasks. This however is optional and isn't required for a theme to work.
+
+Sequence.js and the themes it powers use [Grunt.js](http://gruntjs.com/) to automate useful tasks. With Grunt.js installed (see Grunt.js' [Getting Started](http://gruntjs.com/getting-started)), use the following command to install this theme's development dependencies:
 
 ```
-npm install sequencejs
+npm install
 ```
 
-## Philosophy
+Once development dependencies have installed you can use the commands `grunt serve` and `grunt`.
 
-Sequence.js aims to provide a complete animation framework for you to create animated step-based applications almost entirely in CSS without getting in the way of how you or a web browser work. Create content and then animate it using the HTML, CSS, and workflow you're used to. Sequence.js will take care of the JavaScript functionality. There's no special syntax to learn, no limitations on the workflow you are used to, and no heavy JavaScript implementations recreating what the browser is already capable of.
+### `grunt serve`
 
-## Authors
+This command will start a development environment with the following automated tasks:
 
-[Ian Lunn](http://ianlunn.co.uk/) and [contributors](https://github.com/IanLunn/Sequence/graphs/contributors).
+- Starts a [livereload](http://livereload.com/) session that will reload your browser whenever a file is changed (be sure to install [livereload](http://livereload.com/))
+- Opens your browser and navigates to `http://localhost:8000/`
+- Sets up a *watch* task to run the following sub-tasks:
+  - Update the version number of the following files when changed in `package.json`:
+    - `scripts/sequence-theme.basic.js`
+    - `scss/sequence-theme.basic.scss`
+    - `css/sequence-theme.basic.css`
+    - `bower.json`
+  - Process any `.scss` files found in the `scss` directory, autoprefix them and then copy to `css` and minify
+  - Refresh the browser when any changes are made in HTML, JS, CSS, or SCSS files
 
-Follow [@IanLunn](https://twitter.com/IanLunn/) on Twitter for Sequence.js news, web design &amp; development links, tips, and opinions
+You only need to run `grunt serve` per each development session as the *watch* task will continue to operate as you modify files.
 
-## Sponsors
+### `grunt`
 
-Browser testing environment provided by <a href="http://browserstack.com/">BrowserStack</a>.
+The `grunt` command is a manual version of the *watch* sub tasks listed for the `grunt serve` command.
 
-[![Browser Stack](http://www.sequencejs.com/wp-content/themes/sequence/images/browserstack-light.png)](http://browserstack.com/)
+## Theme License
 
-## Licenses
+This theme is made available under a [GPLv3 license](http://sequencejs.com/licenses/#free-theme).
 
-License information can be found on the [Sequence.js website](http://www.sequencejs.com/licenses/).
+Copyright © 2015 [Ian Lunn Design Limited](http://ianlunn.co.uk/)
 
-## Hire Ian Lunn
+## Sequence.js License
 
-[Ian Lunn](http://ianlunn.co.uk) is a Web Designer, Front-end Developer, and author of [CSS3 Foundations](http://css3foundations.com/).
+This theme is powered by [Sequence.js](http://sequencejs.com/). Sequence.js is made available under the following licenses where applicable:
 
-Hire [Ian Lunn](http://ianlunn.co.uk) for responsive design, WordPress sites, HTML, CSS, and JavaScript.
-
-[![Analytics](https://ga-beacon.appspot.com/UA-11991680-6/sequence)](https://github.com/ianlunn/sequence)
+- [GPLv3](http://sequencejs.com/licenses/#personal-open-source-overview) - For personal and open-source projects
+- [Commercial License](http://sequencejs.com/licenses/#commercial-overview) - For commercial projects
+- [Commercial OEM License](http://sequencejs.com/licenses/#commercial-oem-overview) - For commercial OEM projects

@@ -1,108 +1,43 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "sequencejs",
-        "scope": null,
-        "escapedName": "sequencejs",
-        "name": "sequencejs",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
-      },
-      "/home/elijah/Code/School/cs4474/repo/Yale-Art-Redesign"
-    ]
-  ],
-  "_from": "sequencejs@latest",
-  "_id": "sequencejs@2.0.0",
-  "_inCache": true,
-  "_location": "/sequencejs",
-  "_nodeVersion": "0.12.4",
-  "_npmUser": {
-    "name": "ianlunn",
-    "email": "hello@ianlunn.co.uk"
-  },
-  "_npmVersion": "2.11.2",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "sequencejs",
-    "scope": null,
-    "escapedName": "sequencejs",
-    "name": "sequencejs",
-    "rawSpec": "",
-    "spec": "latest",
-    "type": "tag"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/sequencejs/-/sequencejs-2.0.0.tgz",
-  "_shasum": "0f85841e7b5b2e1adcba1a779cfd1926aa0e752f",
-  "_shrinkwrap": null,
-  "_spec": "sequencejs",
-  "_where": "/home/elijah/Code/School/cs4474/repo/Yale-Art-Redesign",
-  "author": {
-    "name": "Ian Lunn"
-  },
-  "bugs": {
-    "url": "https://github.com/IanLunn/Sequence/issues"
-  },
-  "dependencies": {},
-  "description": "The responsive CSS animation framework for creating unique sliders, presentations, banners, and other step-based applications.",
-  "devDependencies": {
-    "connect-livereload": "~0.3.2",
-    "grunt": "~0.4.2",
-    "grunt-autoprefixer": "~0.4.1",
-    "grunt-contrib-connect": "~0.6.0",
-    "grunt-contrib-copy": "~0.5.0",
-    "grunt-contrib-cssmin": "~0.7.0",
-    "grunt-contrib-jasmine": "^0.8.2",
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-contrib-sass": "~0.6.0",
-    "grunt-contrib-uglify": "~0.3.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-karma": "^0.10.1",
-    "grunt-open": "~0.2.3",
-    "grunt-version": "~0.3.0",
-    "jasmine-core": "^2.2.0",
-    "karma-jasmine": "^0.3.5",
-    "karma-phantomjs-launcher": "^0.1.4",
-    "load-grunt-tasks": "~0.2.1",
-    "time-grunt": "~0.2.8"
-  },
-  "directories": {},
-  "dist": {
-    "shasum": "0f85841e7b5b2e1adcba1a779cfd1926aa0e752f",
-    "tarball": "https://registry.npmjs.org/sequencejs/-/sequencejs-2.0.0.tgz"
-  },
-  "gitHead": "061e0aa8d86feb59fcd48bf8f9bb3895eab7c410",
-  "homepage": "http://www.sequencejs.com/",
-  "keywords": [
-    "sequence",
-    "sequence.js",
-    "sequencejs",
-    "slider",
-    "carousel",
-    "animation",
-    "animation framework",
-    "css animation"
-  ],
-  "license": "SEE LICENSE IN LICENSE.md",
-  "main": "scripts/sequence.min.js",
-  "maintainers": [
-    {
-      "name": "ianlunn",
-      "email": "hello@ianlunn.co.uk"
-    }
-  ],
-  "name": "sequencejs",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
+  "name": "seq-theme-basic",
+  "version": "1.0.0",
+  "description": "A simple, colorful side-to-side slider",
+  "license": "GPL-3.0",
+  "homepage": "http://sequencejs.com/themes/basic/",
+  "private": false,
+  "author": "Ian Lunn",
   "repository": {
     "type": "git",
-    "url": "git://github.com/IanLunn/Sequence.git"
+    "url": "https://github.com/SequenceJS/basic/"
   },
-  "scripts": {},
-  "version": "2.0.0"
+  "bugs": {
+    "url": "https://github.com/SequenceJS/basic/issues",
+    "email": "bugs@sequencejs.com"
+  },
+  "keywords": [
+    "sequence",
+    "sequencejs",
+    "sequence theme",
+    "sequence.js",
+    "sequence.js theme",
+    "basic slider",
+    "basic presentation"
+  ],
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "connect-livereload": "~0.3.2",
+    "grunt-contrib-sass": "~0.6.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-autoprefixer": "~0.4.1",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-connect": "~0.6.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "time-grunt": "~0.2.8",
+    "grunt-open": "~0.2.3",
+    "grunt-version": "~0.3.0"
+  },
+  "dependencies": {
+    "load-grunt-tasks": "~0.2.0"
+  }
 }

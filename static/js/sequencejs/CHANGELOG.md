@@ -1,5 +1,3 @@
-# Change Log
+### 1.0.0 - 06/13/2015
 
-## 2.0.0 (2015/08/09)
-
-- Built from ground-up
+- Initial release compatible with Sequence.js 2
