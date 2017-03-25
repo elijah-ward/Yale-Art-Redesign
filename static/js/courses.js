@@ -20,6 +20,15 @@ function myFunction() {
   }
 }
 
+$(function() {
+    // use event delegation
+    $(document).on('click','#menu-item a', function() {
+        if (this.innerHTML == "Graphic Design")
+        alert(this.innerHTML);
+    });
+});
+
+
 function createTable() {
   var i = 0;
 
