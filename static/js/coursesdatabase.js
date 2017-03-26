@@ -2,6 +2,7 @@ var coursesdatabase = {
           "courses": [
                 {
                   "courseCode": "Art 003a",
+                  "program": "Graphic Design",
                   "courseName": "Blue",
                   "courseCredit": "0.5",
                   "instructor": "Dr. Matthew Stevens",
@@ -9,6 +10,7 @@ var coursesdatabase = {
                 },
                 {
                   "courseCode": "Art 006a",
+                  "program": "Graphic Design",
                   "courseName": "Art of Printed Word",
                   "courseCredit": "0.5",
                   "instructor": "Dr. Matthew Stevens",
@@ -16,6 +18,7 @@ var coursesdatabase = {
                 },
                 {
                   "courseCode": "Art 007b",
+                  "program": "Filmmaking/Video/Interdisciplinary",
                   "courseName": "Art of Game",
                   "courseCredit": "0.5",
                   "instructor": "Dr. Lara Smith",
@@ -23,6 +26,7 @@ var coursesdatabase = {
                 },
                 {
                   "courseCode": "Art 138a/b",
+                  "program": "Photography",
                   "courseName": "Digital Photography",
                   "courseCredit": "0.5",
                   "instructor": "Pr. Lisa Huntzberger",
@@ -30,10 +34,19 @@ var coursesdatabase = {
                 },
                 {
                   "courseCode": "Art 142a/b",
+                  "program": "Filmmaking/Video/Interdisciplinary",
                   "courseName": "Intro. Documentary Filmaking",
                   "courseCredit": "0.5",
                   "instructor": "Dr. Nolan Blacksmith",
                   "description": "Through a series of video exercises, students explore the craft of capturing and building motion images into a visual language. Camera, composition, lighting, sound, color, editing, and directing are explored. The course begins with the approach of finding stories and images in the world."
+                },
+                {
+                  "courseCode": "Painting 545",
+                  "program": "Painting/Printmaking",
+                  "courseName": "Individual Criticism",
+                  "courseCredit": "1.0",
+                  "instructor": "Dr. Jeff Posey",
+                  "description": "This course will situate the body marked by gender as a political body by replacing gender binaries with a dialectical approach.  We will examine gender as a construction that, through the surplus caused by signification, exceeds biological sex.  Beginning with the contributions of feminist artists in the 60s and 70s and moving to the present, we will observe the ways in which the introduction of gender as a subject destabilizes sex, providing the groundwork for understanding gender within the symbolic and imaginary.  However, our analysis of gender will not confine itself to the representation of gender in works of art, or even to gender in the larger field of artistic discourse, but rather will concern itself with the role of gender in forming any political subject."
                 }
             ]
   }

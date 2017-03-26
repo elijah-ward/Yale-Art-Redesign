@@ -23,8 +23,46 @@ function myFunction() {
 $(function() {
     // use event delegation
     $(document).on('click','#menu-item a', function() {
-        if (this.innerHTML == "Graphic Design")
-        alert(this.innerHTML);
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+          if (this.innerHTML == "All") {
+            tr[i+1].style.display = "";
+          }
+          else {
+            if (coursesdatabase.courses[i].program == this.innerHTML){
+              tr[i+1].style.display = "";
+            }
+            else {
+              tr[i+1].style.display = "none";
+            }
+        }
+        }
+    });
+});
+
+$(function() {
+    // use event delegation
+    $(document).on('click','#menu-item2 a', function() {
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+          if (this.innerHTML == "All") {
+            tr[i+1].style.display = "";
+          }
+          else {
+            if (this.innerHTML.indexOf(coursesdatabase.courses[i].courseCredit) >-1){
+              tr[i+1].style.display = "";
+            }
+            else {
+              tr[i+1].style.display = "none";
+            }
+        }
+        }
     });
 });
 
@@ -33,7 +71,7 @@ function createTable() {
   var i = 0;
 
   var table = document.getElementById('myTable');
-  for (i = 1; i < coursesdatabase.courses.length; i++) {
+  for (i = 0; i < coursesdatabase.courses.length; i++) {
     var row = table.insertRow(-1);
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
@@ -51,7 +89,7 @@ $(function() {
     // use event delegation
     $(document).on('click','#myTable tr', function() {
         var index = $(this).index();
-        document.getElementById("course_info").innerHTML = coursesdatabase.courses[index].courseCode + ": " + coursesdatabase.courses[index].courseName;
-        document.getElementById("course_description").innerHTML = coursesdatabase.courses[index].description;
+        document.getElementById("course_info").innerHTML = coursesdatabase.courses[index-1].courseCode + ": " + coursesdatabase.courses[index-1].courseName;
+        document.getElementById("course_description").innerHTML = coursesdatabase.courses[index-1].description;
     });
 });
