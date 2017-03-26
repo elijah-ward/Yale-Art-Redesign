@@ -34,7 +34,9 @@ router.get("/courses", function(req,res){
 });
 
 router.get("/studentprofiles", function(req,res) {
-  res.sendFile(path + "studentprofiles.html
+  res.sendFile(path + "studentprofiles.html")
+});
+
 /* -------------------- PROGRAMS --------------------- */
 
 router.get("/ProgramsHomePage", function(req,res){
