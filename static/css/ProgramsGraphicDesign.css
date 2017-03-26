@@ -1,0 +1,151 @@
+/* -------------------- GENERAL -------------------- */
+
+html {
+	min-height:100%;
+}
+
+body {
+	min-height:100%;
+	min-width:100%;
+
+	font-size: 100%;
+	color:#04356b;
+	font-family: PT, serif;
+
+	overflow:hidden;
+}
+
+/* ---------- SUB-HEADER ---------- */
+
+#Yale-sub-header {
+	min-height: 5vh;
+	max-height: 5vh;
+
+	box-shadow: 0 0 15px black;
+
+	font-size: 150%;
+	font-weight: bold;
+
+	text-align: center;
+	z-index: 2;
+}
+
+#Yale-sub-header-title {
+	padding-top:1.25vw;
+}
+
+/* -------------------- CORE -------------------- */
+
+#Yale-core {
+	min-height: 70vh;
+	max-height: 70vh;
+	min-width: 100vw;
+	max-width: 100vw;
+}
+
+#Yale-core-left {
+	min-height: 70vh;
+	max-height: 70vh;
+}
+
+#Yale-core-left-title {
+	min-height: 5vh;
+	max-height: 5vh;
+
+	background-color:#04356b;
+	color:white;
+
+	font-size: 125%;
+	font-weight: bold;
+
+	text-align: center;
+	padding-top:1.25vh;
+}
+
+.no-padding {
+   padding: 0 !important;
+}
+
+.panel {
+	border:0;
+}
+
+#Yale-core-left .fixed-panel {
+	min-height: 65vh;
+	max-height: 65vh;
+	overflow-y: scroll;
+}
+
+/*.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}*/
+
+#Yale-core-right {
+	min-height: 70vh;
+	max-height: 70vh;
+}
+
+#Yale-core-right-image {
+	min-height: 70vh;
+	max-height: 70vh;
+
+	position: absolute;
+	overflow: hidden;
+
+	z-index: 0;
+
+	/* Manage horizontal rezise/crop */
+}
+
+#Yale-core-right-buttons {
+	min-height: 10vh;
+	max-height: 10vh;
+
+	text-align: center;
+
+	z-index: 2;
+
+	margin-left: 0; /* Temporary fix to the middle padding problem*/
+}
+
+#Yale-core-right-search-course-button, #Yale-core-right-student-profile-button, #Yale-core-right-faculty-staff-button {
+	min-height: 5vh;
+	max-height: 5vh;
+
+	color: #04356b;
+	background-color: white;
+
+	border-color: #04356b;
+	border-style: solid;
+	border-width: 2px; /*Not working*/
+
+	font-size: 100%;
+	font-weight: bold;
+
+	padding-top:1vh;
+}
+
+#Yale-core-right .fixed-panel, #Yale-core-right .panel {
+	min-height: 60vh;
+	max-height: 60vh;
+	overflow-y: scroll;
+}
+
+#Yale-core-right-panel {
+	min-height: 60vh;
+	max-height: 60vh;
+
+	min-width: 49vw;
+	max-width: 49vw;
+
+  	position: absolute;
+
+	z-index: 2;
+}

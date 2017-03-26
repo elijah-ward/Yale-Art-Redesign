@@ -1,0 +1,98 @@
+/* -------------------- GENERAL -------------------- */
+
+html {
+	min-height:100%;
+}
+
+body {
+	min-height:100%;
+	min-width:100%;
+
+	font-size: 100%;
+	color:#04356b;
+	font-family: PT, serif;
+
+	overflow:hidden;
+}
+
+/* ---------- SUB-HEADER ---------- */
+
+#Yale-sub-header {
+	min-height: 5vh;
+	max-height: 5vh;
+
+	box-shadow: 0 0 15px black;
+
+	font-size: 150%;
+	font-weight: bold;
+
+	text-align: center;
+	z-index: 0;
+}
+
+#Yale-sub-header-title {
+	padding-top:1.25vw;
+}
+
+/* -------------------- CORE -------------------- */
+
+#Yale-core {
+	min-height: 70vh;
+	max-height: 70vh;
+	min-width: 100vw;
+	max-width: 100vw;
+	
+    position:relative;
+}
+
+#Yale-core-left {
+	min-height: 70vh;
+	max-height: 70vh;
+}
+
+#Yale-core-left-title {
+	min-height: 5vh;
+	max-height: 5vh;
+
+	background-color:#04356b;
+	color:white;
+
+	font-size: 125%;
+	font-weight: bold;
+
+	text-align: center;
+	padding-top:1.25vh;
+}
+
+.no-padding {
+   padding: 0 !important;
+}
+
+.panel {
+	/*min-width:67vw;
+	max-width:67vw;*/
+	border:0;
+}
+
+.fixed-panel {
+	min-height: 65vh;
+	max-height: 65vh;
+	overflow-y: scroll;
+}
+
+#Yale-core-right {
+	min-height: 70vh;
+	max-height: 70vh;
+}
+
+#Yale-core-right-image {
+	min-height: 70vh;
+	max-height: 70vh;
+
+	position:relative;
+	overflow:hidden;
+
+	z-index: 0;
+
+	/* Manage horizontal rezise/crop */
+}
