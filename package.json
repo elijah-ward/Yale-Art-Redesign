@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node Server.js",
-	"heroku-postbuild": "npm start"
+    "start": "node Server.js"
   },
 "engines": {
 	"node": "4.5.0",
