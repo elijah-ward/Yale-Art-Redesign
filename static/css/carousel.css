@@ -64,6 +64,15 @@ Version: 1.0
   background-color: white;
 }
 
+.carousel .slides .slideItem #picture {
+  width: 30%;
+  height: 35%;
+  float: right;
+  border-style: solid;
+  background-color: lightgrey;
+  border-color: black;
+}
+
 /* _______________________________________________ */
 
 /* DIRECTION BUTTON */

@@ -5,7 +5,7 @@ vMargin: 0.2,
 frontWidth: 400,
 frontHeight: 300,
 carouselWidth: 1000,
-carouselHeight: 360,
+carouselHeight: 1000,
 left: 0,
 right: 0,
 top: 0,
@@ -29,3 +29,9 @@ descriptionContainer: '.description',
 backOpacity: 1,
 before: function(carousel) {},
 after: function(carousel) {}
+
+/*.carousel-inner .active.left { left: -25%; }
+.carousel-inner .next        { left:  25%; }
+.carousel-inner .prev		 { left: -25%; }
+.carousel-control 			 { width:  4%; }
+.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}*/
