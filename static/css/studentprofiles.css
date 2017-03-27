@@ -1,0 +1,13 @@
+hAlign: 'center',
+vAlign: 'center',
+hMargin: 0.4,
+
+
+body {
+	min-height: 100%;
+	top: 0;
+	bottom: 0;
+	position: relative;
+	background-color: #EEEEEE;
+
+}

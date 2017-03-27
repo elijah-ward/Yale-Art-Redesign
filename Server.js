@@ -29,6 +29,14 @@ router.get("/ArtsHomePage", function(req,res){
 	res.sendFile(path + "ArtsHomePage.html")
 });
 
+router.get("/courses", function(req,res){
+  res.sendFile(path + "courses.html")
+});
+
+router.get("/studentprofiles", function(req,res) {
+  res.sendFile(path + "studentprofiles.html")
+});
+
 /* -------------------- PROGRAMS --------------------- */
 
 router.get("/ProgramsHomePage", function(req,res){
