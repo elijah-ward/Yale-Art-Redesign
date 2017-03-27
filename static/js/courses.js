@@ -90,6 +90,6 @@ $(function() {
     $(document).on('click','#myTable tr', function() {
         var index = $(this).index();
         document.getElementById("course_info").innerHTML = coursesdatabase.courses[index-1].courseCode + ": " + coursesdatabase.courses[index-1].courseName;
-        document.getElementById("course_description").innerHTML = coursesdatabase.courses[index-1].description;
+        document.getElementById("course_description").innerHTML = coursesdatabase.courses[index-1].description + '<br/><Br/><b>' + "Instructor: " + '</b>' + coursesdatabase.courses[index-1].instructor;
     });
 });
