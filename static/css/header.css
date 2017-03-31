@@ -10,3 +10,7 @@
   justify-content: center; /* Optional, to align inner flex-items
                               horizontally within the column  */
 }
+
+.btn-primary{
+	background-color: #04356b;
+}
