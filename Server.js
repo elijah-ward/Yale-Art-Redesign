@@ -45,21 +45,21 @@ router.get("/ProgramsHomePage", function(req,res){
 	res.sendFile(path + "ProgramsHomePage.html")
 });
 
-// router.get("/SculptureProgram", function(req,res){
-// 	res.sendFile(path + "SculptureProgram.html")
-// });
+router.get("/ProgramsSculpture", function(req,res){
+	res.sendFile(path + "ProgramsSculpture.html")
+});
 
-// router.get("/PaintingProgram", function(req,res){
-// 	res.sendFile(path + "PaintingProgram.html")
-// });
+router.get("/ProgramsPainting", function(req,res){
+	res.sendFile(path + "ProgramsPainting.html")
+});
 
-// router.get("/PhotographyProgram", function(req,res){
-// 	res.sendFile(path + "PhotographyProgram.html")
-// });
+router.get("/ProgramsPhotography", function(req,res){
+	res.sendFile(path + "ProgramsPhotography.html")
+});
 
-// router.get("/FilmAndMovieMakingProgram", function(req,res){
-// 	res.sendFile(path + "FilmAndMovieMakingProgram.html")
-// });
+router.get("/ProgramsFilmAndMovieMaking", function(req,res){
+	res.sendFile(path + "ProgramsFilmAndMovieMaking.html")
+});
 
 router.get("/ProgramsGraphicDesign", function(req,res){
 	res.sendFile(path + "ProgramsGraphicDesign.html")
@@ -91,8 +91,7 @@ router.get("/AdmissionApplication", function(req,res){
 	res.sendFile(path + "AdmissionApplication.html")
 });
 
-/* --------------------------------------------------- */
-
+/* ----------------------- MISC ----------------------- */
 
 router.get("/Test", function(req,res){
 	res.sendFile(path + "test.html") /* Test -erase- */
