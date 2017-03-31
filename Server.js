@@ -11,7 +11,13 @@ app.set('port', (process.env.PORT || 5000));
 *		ROUTES		*
 *********************/
 
-router.get("/",function(req,res){
+/* -------------------- HOME -------------------- */
+
+router.get("/index",function(req,res){
+	res.sendFile(path + "index.html");
+});
+
+router.get("/HomePage",function(req,res){
 	res.sendFile(path + "index.html");
 });
 
@@ -34,6 +40,12 @@ router.get("/ArtsHomePage", function(req,res){
 router.get("/courses", function(req,res){
   res.sendFile(path + "courses.html")
 });
+
+router.get("/Resources", function(req,res){
+  res.sendFile(path + "Resources.html")
+});
+
+/* ---- */
 
 router.get("/studentprofiles", function(req,res) {
   res.sendFile(path + "studentprofiles.html")
