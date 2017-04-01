@@ -10,7 +10,7 @@ body {
 
 	font-size: 100%;
 	color:#04356b;
-	font-family: PT, serif;
+	font-family: "PT serif", serif;
 }
 
 /* -------------------- CORE -------------------- */
@@ -73,71 +73,18 @@ body {
 	background-color: #04356b;
 }
 
-/* -------------------- RESOURCES PANEL -------------------- */
 
+#Resources-Panel-Text {
+	min-height: 64vh;
+	max-height: 65vh;
+	min-width: 77.5vw;
+	max-width: 77.5vw;
 
-h3 {
-  margin-top: 0;
+	text-align:left;
+
+	overflow-y: scroll;
 }
 
-.tabs-left { margin-top: 3rem; }
-
-.nav-tabs {
-  float: left;
-  border-bottom: 0;
-  
-
-  li {
-    float: none;
-    margin: 0;
-    
-    a {
-      margin-right: 0;
-      border: 0;
-      background-color: #333;
-      
-      &:hover {
-        background-color: #444;
-      }
-    }
-  }
-  
-  .glyphicon {
-    color: #fff;
-  }
-  
-  .active .glyphicon {
-    color: #333;
-  }
+#Resources-Panel-Text p {
+	font-weight: normal;
 }
-
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
-  border:0;
-}
-
-.tab-content {
-  margin-left: 45px;
-  
-  .tab-pane {
-    display: none;
-    background-color: #fff;
-    padding: 1.6rem;
-    overflow-y: auto;
-  }
-  
-  .active { display: block; }
-}
-
-.list-group {
-  width: 100%;
-  
-  .list-group-item {
-    height: 50px;
-    
-    h4, span {
-      line-height: 11px;
-    }
-  }
-}
-
-
