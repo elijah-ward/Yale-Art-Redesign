@@ -34,6 +34,10 @@ li {
 	justify-content: center;
 }
 
+.seq-preload-circle{
+	fill: #04356b;
+}
+
 .frame{
 	overflow:auto;
 	white-space: nowrap;

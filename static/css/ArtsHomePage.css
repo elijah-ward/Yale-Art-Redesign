@@ -43,6 +43,7 @@ a {
     border-width: 0.1vw;
     border-color: white;
     border-right-style: solid;
+    height: 75vh;
 }
 
 @media (min-width: 768px) {

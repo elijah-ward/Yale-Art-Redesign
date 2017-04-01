@@ -1,6 +1,9 @@
 <!-- HEADER TEMPLATE -->
 <link rel="stylesheet" href="/static/css/header.css">
 <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+		<script src="static/js/sequencejs/scripts/imagesloaded.pkgd.min.js"></script>
+		<script src="static/js/sequencejs/scripts/hammer.min.js"></script>
+		<script src="static/js/sequencejs/scripts/sequence.min.js"></script>
 <div class="row vertical-align" style="z-index: 100; position: relative; height: 15vh; box-shadow: 0 0 30px black">
 	<div class="col-md-2" style=" flex-direction: column; text-align: center; height: inherit;">
 		<img src="/static/img/yaleartshield.png" style="padding: 10px; height:100%;" alt="Yale Art Department Logo" class="img-rounded">
@@ -14,10 +17,15 @@
 	<div class="col-md-2" style="justify-content: flex-start; height: inherit;"> -->
 		<img src="/static/img/art_stamp_small.png" style="flex-direction: column; padding: 10px; height:100%;" alt="Yale Art Department Logo" class="img-rounded">
 	</div>
-	<div class="col-md-2"></div>
+	<div class="col-md-2">
+	</div>
 	<div class="col-md-2" style="text-align: center; align-items: center; height: inherit;">
+	<div class="btn-group">
+			<span><a href="/" class="btn btn-default" role="button"><h4>Home <span class="glyphicon glyphicon-home"></span></h4></a></span>
+
 		<span>
-			<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg"><h4>Contact <span class="glyphicon glyphicon-chevron-right"></span></h4></button>
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg"><h4>Contact <span class="glyphicon glyphicon-chevron-right"></span></h4></button></span>
+			</div>
 		</div>
 	</div>
 	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
@@ -78,3 +86,9 @@
 			</div>
 		</div>
 	</div>
+	<div style="height: 0px; visibility: hidden;" id="sequence">
+	<ul style="height: 0px;" class="seq-canvas">
+	<li class="step1"></li>
+	</ul>
+	</div>
+	<script src="static/js/sequencejs/scripts/sequence-theme.basic.js"></script>
