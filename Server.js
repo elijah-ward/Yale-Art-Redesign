@@ -13,7 +13,7 @@ app.set('port', (process.env.PORT || 5000));
 
 /* -------------------- HOME -------------------- */
 
-router.get("/index",function(req,res){
+router.get("/",function(req,res){
 	res.sendFile(path + "index.html");
 });
 
