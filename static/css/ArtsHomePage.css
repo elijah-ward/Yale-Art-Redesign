@@ -13,7 +13,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "PT", serif;
+  font-family: "PT serif", serif;
 }
 
 a {
@@ -23,7 +23,8 @@ a {
 
 .img-caption{
     color: #E0E0E0;
-    font-size: 3vw;
+    font-size: 150%;
+    font-weight: bold;
     text-shadow: 4px 4px 20px black;
     left: 0;
     position:absolute;
