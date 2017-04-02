@@ -11,6 +11,8 @@ body {
 	font-size: 100%;
 	color:#04356b;
 	font-family: "PT serif", serif;
+
+	overflow-x: hidden; /* To deal with some over on the right on the screen */
 }
 
 /* -------------------- CORE -------------------- */
