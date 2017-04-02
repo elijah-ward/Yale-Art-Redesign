@@ -7,3 +7,12 @@ $(document).ready(function(){
     buttonNav:'bullets'
   });
 });
+
+$('#prevButton').click(function() {
+  alert("Test");
+  $('#myCarousel').carousel('prev');
+});
+
+$('.right carousel-control').click(function() {
+  $('#myCarousel').carousel('next');
+});

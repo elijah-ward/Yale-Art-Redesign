@@ -25,7 +25,6 @@ reflectionHeight: 0.2,
 reflectionOpacity: 0.5,
 reflectionColor: '255,255,255',
 description: false,
-descriptionContainer: '.description',
 backOpacity: 1,
 before: function(carousel) {},
 after: function(carousel) {}
