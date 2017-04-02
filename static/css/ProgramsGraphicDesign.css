@@ -25,12 +25,8 @@ body {
 	font-weight: bold;
 
 	text-align: center;
+	padding-top: 1vh;
 }
-
-#Yale-sub-header-title {
-	padding-top:1.0vw;
-}
-
 /* -------------------- CORE -------------------- */
 
 #Yale-core {
