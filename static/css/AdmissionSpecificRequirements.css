@@ -20,13 +20,10 @@ body {
 	min-height: 5vh;
 	max-height: 5vh;
 
-	box-shadow: 0 0 15px black;
-
 	font-size: 150%;
 	font-weight: bold;
 
 	text-align: center;
-	z-index: 0;
 }
 
 #Yale-sub-header-title {

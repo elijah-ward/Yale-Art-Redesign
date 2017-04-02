@@ -18,3 +18,7 @@
 .seq-preload-circle{
 	fill: #04356b;
 }
+
+body {
+	z-index: 100;
+}
