@@ -4,19 +4,17 @@
    <head>
      <meta charset="UTF-8">
  		<title>Yale Art - Courses</title>
-
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <link href = "css/bootstrap.min.css" rel = "stylesheet">
     		<meta charset="UTF-8">
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-    		<!-- If IE use the latest rendering engine -->
-    		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    		<!-- Set the page to the width of the device and set the zoom level -->
-    		<meta name="viewport" content="width = device-width, initial-scale = 1">
-
-    		<!--
-    		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
-    		<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
-    		-->
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <link rel="stylesheet" href="/static/css/main.css">
 
     		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
@@ -51,9 +49,12 @@
        <br/>
 
        <div class="jumbotron">
+         <a href="#" id="show-option" title="Click on a table row to view course details" style="float: right"><i class="glyphicon glyphicon-question-sign" style="float: right;"></i></a>
+         <div id="pageTitle"><h2 style="text-align: center; margin: auto;color: #04356b">Student Profiles</h2>
+         </div>
          <div class="row">
            <div class="col-md-8"><br>
-             <table padding="5%">
+             <table padding="3%">
                <tr><td >
                  <input type="text" id="myInput" style="width:20% height:50% padding:5%" onkeyup="myFunction()" placeholder="Search by Keyword..">
                </td>
@@ -66,16 +67,16 @@
                        <li id="menu-item"><a href="#">All</a></li>
                        <li id="menu-item"><a href="#">Graphic Design</a></li>
                        <li id="menu-item"><a href="#">Photography</a></li>
-                       <li id="menu-item"><a href="#">Sculpting</a></li>
+                       <li id="menu-item"><a href="#">Sculpture</a></li>
                        <li id="menu-item"><a href="#">Painting/Printmaking</a></li>
                        <li id="menu-item"><a href="#">Filmmaking/Video/Interdisciplinary</a></li>
                      </ul>
                 </div>
              </td>
 
-             <td style="padding:7%">
+             <td style="padding: 5%;">
                <div class="dropdown" style="height:100%">
-                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="programfilter">Filter by Credit Value
+                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="programfilter" >Filter by Credit Value
                    <span class="caret"></span></button>
                    <ul class="dropdown-menu">
                      <li id="menu-item2"><a href="#">All</a></li>
@@ -84,6 +85,10 @@
                      <li id="menu-item2"><a href="#">1.5 Credits</a></li>
                    </ul>
               </div>
+           </td>
+
+           <td>
+             <button id = "clearFilters" type="button" class="btn btn-primary" onclick="clear()" style="padding:5%">Clear Filters</button>
            </td>
 
         </table>
@@ -96,12 +101,14 @@
              <th style="width:25%">Instructor</th>
            </tr>
          </table>
+
+
        </div>
-       <br><br>
+       <br><br><br><Br><Br><Br>
        <div class="col-md-4" style="height: 600px; background-color: white; padding: 0.5%">
           <div id='rightsidepanel' style="color: black; background-color: #0D4F8B; height: 13%; padding:10px"><p id="course_info" style="color: white; font-weight: bold; font-size: 25px">Instructions</p></div>
           <div id='rightsidepanel' style="color: black;  height: 100%; padding: 10px"><p id="descriptionheading">Course Description</p><p id="course_description" style="font-size: 17px">Click on a row to view course details.</p></div>
-      </div>
+       </div>
      </div>
      </div>
    </div>

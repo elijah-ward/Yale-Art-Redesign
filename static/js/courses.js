@@ -1,3 +1,5 @@
+var programFilter = "All";
+var creditFilter = "All";
 
 function myFunction() {
   // Declare variables
@@ -39,17 +41,22 @@ function myFunction() {
 $(function() {
     // use event delegation
     $(document).on('click','#menu-item a', function() {
+        programFilter = this.innerHTML;
         table = document.getElementById("myTable");
         tr = table.getElementsByTagName("tr");
 
         // Loop through all table rows, and hide those who don't match the search query
         for (i = 0; i < tr.length; i++) {
           if (this.innerHTML == "All") {
-            tr[i+1].style.display = "";
+            if (creditFilter == "All" || coursesdatabase.courses[i].courseCredit == creditFilter) {
+              tr[i+1].style.display = "";
+            }
           }
           else {
             if (coursesdatabase.courses[i].program == this.innerHTML){
-              tr[i+1].style.display = "";
+              if (creditFilter == "All" || coursesdatabase.courses[i].courseCredit == creditFilter) {
+                tr[i+1].style.display = "";
+              }
             }
             else {
               tr[i+1].style.display = "none";
@@ -62,17 +69,22 @@ $(function() {
 $(function() {
     // use event delegation
     $(document).on('click','#menu-item2 a', function() {
+        creditFilter = this.innerHTML.split(' ')[0];
         table = document.getElementById("myTable");
         tr = table.getElementsByTagName("tr");
 
         // Loop through all table rows, and hide those who don't match the search query
         for (i = 0; i < tr.length; i++) {
           if (this.innerHTML == "All") {
-            tr[i+1].style.display = "";
+            if (programFilter == "All" || coursesdatabase.courses[i].program == programFilter) {
+              tr[i+1].style.display = "";
+            }
           }
           else {
             if (this.innerHTML.indexOf(coursesdatabase.courses[i].courseCredit) >-1){
-              tr[i+1].style.display = "";
+              if (programFilter == "All" || coursesdatabase.courses[i].program == programFilter) {
+                tr[i+1].style.display = "";
+              }
             }
             else {
               tr[i+1].style.display = "none";
@@ -108,4 +120,16 @@ $(function() {
         document.getElementById("course_info").innerHTML = coursesdatabase.courses[index-1].courseCode + ": " + coursesdatabase.courses[index-1].courseName;
         document.getElementById("course_description").innerHTML = coursesdatabase.courses[index-1].description + '<br/><Br/><b>' + "Instructor: " + '</b>' + coursesdatabase.courses[index-1].instructor;
     });
+});
+
+$(function()  {
+  // use event delegation
+  $(document).on('click','#clearFilters', function() {
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+      tr[i+1].style.display = "";
+    }
+  });
+
 });
