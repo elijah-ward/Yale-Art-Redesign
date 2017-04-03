@@ -1,53 +1,53 @@
 var studentsdatabase = {
           "students": [
                 {
-                  "name": "Sula Bermudez",
+                  "name": "SULA BERMUDEZ",
                   "program": "Sculpture",
                   "year": "1st Year",
                   "website": "http://www.sulafay.com",
-                  "biography": "I am a first year Sculpture student expecting to graduate in 2018."
+                  "biography": "I am a first year Sculpture student at Yale University. Maecenas accumsan tempor ligula, nec euismod eros viverra vitae. Proin pretium libero fringilla, interdum enim vel, nim vel."
                 },
                 {
-                  "name": "Chase Booker",
+                  "name": "CHASE BOOKER",
                   "program": "Graphic Design",
                   "year": "2nd Year",
                   "website": "http://www.chasebooker.com",
-                  "biography": "I am a second year Graphic Design student expecting to graduate in 2017."
+                  "biography": "I am a 2nd year Graphic Design student at Yale University. Maecenas accumsan tempor ligula, nec euismod eros viverra vitae. Proin pretium libero fringilla, interdum enim vel, nim vel."
                 },
                 {
-                  "name": "Dana Singer",
+                  "name": "DANA SINGER",
                   "program": "Photography",
                   "year": "2nd Year",
                   "website": "http://www.dannasinger.photoshelter.com",
-                  "biography": "I am a second year Photography student expecting to graduate in 2017."
+                  "biography": "I am a second year Photography student at Yale University. Maecenas accumsan tempor ligula, nec euismod eros viverra vitae. Proin pretium libero fringilla, interdum enim vel, nim vel."
                 },
                 {
-                  "name": "Estefania Puerta",
-                  "program": "Painting and Printmaking",
+                  "name": "ESTEFANIA PUERTA",
+                  "program": "Painting & Printmaking",
                   "year": "1st Year",
                   "website": "http://estepuerta.com/home.html",
-                  "biography": "I am a first year Painting & Printmaking student expecting to graduate in 2018."
+                  "biography": "I am a 1st year Painting & Printmaking student at Yale University. Maecenas accumsan tempor ligula, nec euismod eros viverra vitae. Proin pretium libero fringilla, interdum enim vel, nim vel."
                 },
                 {
-                  "name": "Luke Libera Moore",
+                  "name": "LUKE LIBERA MOORE",
                   "program": "Photography",
                   "year": "1st Year",
                   "website": "http://www.lukeliberamoore.com",
-                  "biography": "I am a first year Photography student expecting to graduate in 2018."
+                  "biography": "I am a first year Photography student at Yale University. Maecenas accumsan tempor ligula, nec euismod eros viverra vitae. Proin pretium libero fringilla, interdum enim vel, nim vel."
                 },
                 {
-                  "name": "Willie Stewart",
+                  "name": "WILLIE STEWART",
                   "program": "Sculpture",
                   "year": "1st Year",
                   "website": "http://www.willie-stewart.com/connect",
-                  "biography": "I am a first year Sculpture student expecting to graduate in 2018."
+                  "biography": "I am a first year Sculpture student at Yale University. Maecenas accumsan tempor ligula, nec euismod eros viverra vitae. Proin pretium libero fringilla, interdum enim vel, nim vel."
                 },
                 {
-                  "name": "Franziska Virgili",
+                  "name": "FRANZISKA VIRGILI",
                   "program": "Graphic Design",
                   "year": "2nd Year",
                   "website": "http://www.virgili.de",
-                  "biography": "I am a second year GD student expecting to graduate in 2018."
+                  "biography": "I am a second year Graphic Design student at Yale University. Maecenas accumsan tempor ligula, nec euismod eros viverra vitae. Proin pretium libero fringilla, interdum enim vel, nim vel."
                 }
             ]
   }

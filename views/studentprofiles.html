@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Yale Art - Student Profiles</title>
-    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-    <!-- Bootstrap -->
-    <link href = "css/bootstrap.min.css" rel = "stylesheet">
-    <meta charset="UTF-8">
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="/static/css/main.css">
-    <script src="../static/js/loadTemplates.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="Stylesheet" type="text/css" href="../static/css/content.css">
-    <link rel="Stylesheet" type="text/css" href="../static/css/carousel.css">
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.11/jquery.mousewheel.min.js"></script>
-    <script type="text/javascript" src="../static/js/studentsdatabase.js"></script>
-    <script type="text/javascript" src="../static/js/jquery.carousel-1.1.min.js"></script>
-    <script type="text/javascript" src="../static/js/sample01.js"></script>
-    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-  </head>
-  <body onload="createTable()">
+<head>
+<title>Yale Art - Student Profiles</title>
+<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+<!-- Bootstrap -->
+<link href = "css/bootstrap.min.css" rel = "stylesheet">
+
+<meta charset="UTF-8">
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+<link rel="stylesheet" href="/static/css/main.css">
+<script src="../static/js/loadTemplates.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.11/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="../static/js/jquery.carousel-1.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<link rel="Stylesheet" type="text/css" href="../static/css/content.css">
+<link rel="Stylesheet" type="text/css" href="../static/css/carousel.css">
+<script type="text/javascript" src="../static/js/sample01.js"></script>
+<script type="text/javascript" src="../static/js/studentsdatabase.js"></script>
+<script type="text/javascript" src="../static/js/studentprofiles.js"></script>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onload="createTable()">
     <div style="max-height: 100vh; overflow: hidden;" class="container-fluid">
       <div id="header"></div>
       <div>
@@ -38,33 +49,90 @@
       <br/>
       <div class="jumbotron">
         <div class="jquery-script-clear"></div>
+
+        <div id="pageTitle"><h2 style="text-align: center; margin: auto;color: #04356b">Student Profiles</h2>
+          <a href="#" id="show-option" title="Scroll up or down on top of the cards to slide to the previous or next profile." style="float: right"><i class="glyphicon glyphicon-question-sign" style="float: right;"></i></a>
+        </div><br>
         <!-- carousel -->
-        <div class="carousel">
+        <div id="top" style="background-color: lightgrey; padding: 10px;">
+        <div  class="carousel" id = "myCarousel" data-ride="carousel">
           <!-- BEGIN CONTAINER -->
-          <div class="slides" style="width: 930px; height: 330px;"> <!-- BEGIN CAROUSEL -->
-          <div class="slideItem" style="width: 256px; height: 411.2px; top: 54px; right: 34.6px; opacity: 1; z-index: 4; display: block;"> <!-- SLIDE ITEM -->
-          <a href="#"><div id = "profile" style="width: 400px; height: 400px; display: inline-block;"><p id="name1"></p><br><br><p id="bio1"></p></div></a>
-        </div>
-        <div class="slideItem" style="width: 204.8px; height: 368.96px; top: 73.2px; right: -47.32px; opacity: 0; z-index: 3; display: none;">
-          <a href="#"> <div id = "profile" style="width: 400px; height: 400px; display: inline-block;"><p id="name2"></p><br><br><p id="bio2"></p></div></a>
-        </div>
-        <div class="slideItem" style="width: 204.8px; height: 368.96px; top: 73.2px; right: 772.52px; opacity: 0; z-index: 3; display: none;">
-          <a href="#"> <div id = "profile" style="width: 400px; height: 400px; display: inline-block;"><p id="name3"></p><br><br><p id="bio3"></p></div></a>
-        </div>
-        <div class="slideItem" style="width: 256px; height: 411.2px; top: 54px; right: 639.4px; opacity: 1; z-index: 4; display: block;">
-          <a href="#"> <div id = "profile" style="width: 400px; height: 400px; display: inline-block;"><p id="name4"></p><br><br><p id="bio4"></p></div> </a>
-        </div>
-        <div class="slideItem" style="width: 320px; height: 464px; top: 30px; right: 473px; opacity: 1; z-index: 5; display: block;">
-          <a href="#"> <div id = "profile" style="width: 400px; height: 400px; display: inline-block;"><p id="name5"></p><br><br><p id="bio5"></p></div> </a>
-        </div>
-        <div class="slideItem" style="width: 400px; height: 530px; top: 0px; right: 265px; opacity: 1; z-index: 6; display: block;">
-          <a href="#"> <div id = "profile" style="width: 400px; height: 400px; display: inline-block;"><p id="name6"></p><br><br><p id="bio6"></p></div> </a>
-        </div>
-        <div class="slideItem" style="width: 320px; height: 464px; top: 30px; right: 137px; opacity: 1; z-index: 5; display: block;">
-          <div id = "profile" style="width: 400px; height: 400px; display: inline-block;"><p id="name7"></p><br><br><p id="bio7"></p></div>
-        </div>
-      </div>
-      <!-- END CAROUSEL-->
+
+          <div class="slides" style="width: 930px; height: 50%;" role="listbox"> <!-- BEGIN CAROUSEL -->
+
+            <div class="slideItem" style="width: 100%; height: 100%; top: 54px; right: 34.6px; opacity: 1; z-index: 4; display: block"> <!-- SLIDE ITEM -->
+              <div id = "profile" style="width: 100%; height: 100%; display: inline-block;">
+                <div id="programTag"><p id = "program1"></p></div><br>
+                <div id="mainbody" style = "color: white; background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.7);">
+                <p id="name1" style="font-size: 30px; font-weight: bold; text-align: center"></p>
+                <p id="bio1" style="font-size: 15px; width: 80%; margin-left: 35px; text-align: justify"></p></div>
+                <a href="#" class="btn btn-info" role="button" id="website1" style="background-color: #04356b; font-size: 25px; width=10px; border-radius: 25px; border-color: white">Go to Website</a>
+              </div>
+            </div>
+
+            <div class="slideItem" style="width: 204.8px; height: 368.96px; top: 73.2px; right: -47.32px; opacity: 0; z-index: 3; display: none;">
+              <div id = "profile" style="width: 400px; height: 400px; display: inline-block">
+                  <div id="programTag"><p id = "program2"></p></div><br>
+                <div id="mainbody" style = "color: white; background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.7);">
+                <p id="name2" style="font-size: 30px; font-weight: bold; text-align: center"></p>
+                <p id="bio2" style="font-size: 15px; width: 80%; margin-left: 35px; text-align: justify"></p></div>
+                <a href="#" class="btn btn-info" role="button" id="website2" style="background-color: #04356b; font-size: 25px; width=50px; border-radius: 25px; border-color: white">Go to Website</a></div>
+            </div>
+
+            <div class="slideItem" style="width: 204.8px; height: 368.96px; top: 73.2px; right: 772.52px; opacity: 0; z-index: 3; display: none;">
+              <div id = "profile" style="width: 400px; height: 400px; display: inline-block;">
+                  <div id="programTag"><p id = "program3"></p></div><br>
+                <div id="mainbody" style = "color: white; background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.7);">
+                <p id="name3" style="font-size: 30px; font-weight: bold; text-align: center; color: white"></p>
+                <p id="bio3" style="font-size: 15px; width: 80%; margin-left: 35px; text-align: justify; color: white"></p></div>
+                <a href="#" class="btn btn-info" role="button" id="website3" style="background-color: #04356b; font-size: 25px; width=50px; border-radius: 25px; border-color: white">Go to Website</a></div>
+            </div>
+
+            <div class="slideItem" style="width: 256px; height: 411.2px; top: 54px; right: 639.4px; opacity: 1; z-index: 4; display: block;">
+              <div id = "profile" style="width: 400px; height: 400px; display: inline-block;">
+                  <div id="programTag"><p id = "program4"></p></div><br>
+                <div id="mainbody" style = "color: white; background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.7);">
+                <p id="name4" style="font-size: 30px; font-weight: bold; text-align: center"></p>
+                <p id="bio4" style="font-size: 15px; width: 80%; margin-left: 35px; text-align: justify"></p></div>
+                <a href="#" class="btn btn-info" role="button" id="website4" style="background-color: #04356b; font-size: 25px; width=50px; border-radius: 25px; border-color: white">Go to Website</a></div>
+            </div>
+
+            <div class="slideItem" style="width: 320px; height: 464px; top: 30px; right: 473px; opacity: 1; z-index: 5; display: block;">
+                <div id = "profile" style="width: 400px; height: 400px; display: inline-block;">
+                    <div id="programTag"><p id = "program5"></p></div><br>
+                  <div id="mainbody" style = "color: white; background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.7);">
+                  <p id="name5" style="font-size: 30px; font-weight: bold; text-align: center"></p>
+                  <p id="bio5" style="font-size: 15px; width: 80%; margin-left: 35px; text-align: justify"></p></div>
+                  <a href="#" class="btn btn-info" role="button" id="website5" style="background-color: #04356b; font-size: 25px; width=50px; border-radius: 25px; border-color: white">Go to Website</a></div>
+            </div>
+
+            <div class="slideItem" style="width: 400px; height: 530px; top: 0px; right: 265px; opacity: 1; z-index: 6; display: block;">
+              <div id = "profile" style="width: 400px; height: 400px; display: inline-block;">
+                  <div id="programTag"><p id = "program6"></p></div><br>
+                <div id="mainbody" style = "color: white; background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.7);">
+                <p id="name6" style="font-size: 30px; font-weight: bold; text-align: center"></p>
+                <p id="bio6" style="font-size: 15px; width: 80%; margin-left: 35px; text-align: justify"></p></div>
+                <a href="#" class="btn btn-info" role="button" id="website6" style="background-color: #04356b; font-size: 25px; width=50px; border-radius: 25px; border-color: white">Go to Website</a></div>
+            </div>
+
+            <div class="slideItem" style="width: 320px; height: 464px; top: 30px; right: 137px; opacity: 1; z-index: 5; display: block;">
+              <div id = "profile" style="width: 400px; height: 400px; display: inline-block;">
+                  <div id="programTag"><p id = "program7"></p></div><br>
+                <div id="mainbody" style = "color: white; background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.7);">
+                <p id="name7" style="font-size: 30px; font-weight: bold; text-align: center"></p>
+                <p id="bio7" style="font-size: 15px; width: 80%; margin-left: 35px; text-align: justify"></p></div>
+                <a href="#" class="btn btn-info" role="button" id="website7" style="background-color: #04356b; font-size: 25px; width=50px; border-radius: 25px; border-color: white">Go to Website</a></div>
+            </div>
+
+          </div>
+          <!-- END CAROUSEL-->
+          <a class="left carousel-control" id="prevButton" href="#myCarousel" data-slide="prev" onclick="$('#myCarousel').carousel('prev')"><i class="glyphicon glyphicon-chevron-left"></i></a>
+          <a class="right carousel-control" id="nextButton" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+        </div></div>
+      <!--END CONTAINER-->
+
+    <!--END CONTAINER-->
+
     </div>
     <!--END CONTAINER-->
   </div>

@@ -7,3 +7,25 @@ $(document).ready(function(){
     buttonNav:'bullets'
   });
 });
+
+$('#prevButton').click(function() {
+  alert("Test");
+  $('#myCarousel').carousel('prev');
+});
+
+$('.right carousel-control').click(function() {
+  $('#myCarousel').carousel('next');
+});
+
+function clickPrev() {
+  $('#myCarousel').carousel('prev');
+}
+
+$(function() {
+    $( "#show-option" ).tooltip({
+        show: {
+        effect: "slideDown",
+        delay: 300
+        }
+    });
+});
