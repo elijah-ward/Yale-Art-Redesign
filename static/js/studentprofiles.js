@@ -16,3 +16,7 @@ $('#prevButton').click(function() {
 $('.right carousel-control').click(function() {
   $('#myCarousel').carousel('next');
 });
+
+function clickPrev() {
+  $('#myCarousel').carousel('prev');
+}
