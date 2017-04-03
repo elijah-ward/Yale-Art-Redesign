@@ -20,3 +20,12 @@ $('.right carousel-control').click(function() {
 function clickPrev() {
   $('#myCarousel').carousel('prev');
 }
+
+$(function() {
+    $( "#show-option" ).tooltip({
+        show: {
+        effect: "slideDown",
+        delay: 300
+        }
+    });
+});
