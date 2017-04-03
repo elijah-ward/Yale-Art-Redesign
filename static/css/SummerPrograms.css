@@ -21,8 +21,6 @@ body {
 	min-height: 5vh;
 	max-height: 5vh;
 
-	box-shadow: 0 0 15px black;
-
 	font-size: 150%;
 	font-weight: bold;
 
@@ -72,16 +70,24 @@ body {
 #Yale-core-right {
 	min-height: 70vh;
 	max-height: 70vh;
+
+	overflow: hidden;
+	position: relative;
 }
 
 #Yale-core-right-image {
 	min-height: 70vh;
 	max-height: 70vh;
+	min-width: 35vw;
 
-	position:relative;
-	overflow:hidden;
+	z-index: 10;
 
-	z-index: -1;
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
 
 	/* Manage horizontal rezise/crop */
 }
