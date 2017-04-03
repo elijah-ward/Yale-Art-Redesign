@@ -10,7 +10,7 @@ body {
 
 	font-size: 100%;
 	color:#04356b;
-	font-family: PT, serif;
+	font-family: "PT serif", serif;
 
 	overflow:hidden;
 }
@@ -20,17 +20,14 @@ body {
 	min-height: 5vh;
 	max-height: 5vh;
 
-	box-shadow: 0 0 15px black;
-
 	font-size: 150%;
 	font-weight: bold;
 
 	text-align: center;
-	z-index: 0;
 }
 
 #Yale-sub-header-title {
-	padding-top:1.25vw;
+	padding-top:1vh;
 }
 
 /* -------------------- CORE -------------------- */

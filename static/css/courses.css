@@ -9,6 +9,15 @@
     margin-bottom: 12px; /* Add some space below the input */
 }
 
+body {
+    min-height: 100%;
+    top: 0;
+    bottom: 0;
+    position: relative;
+    background-color: #EEEEEE;
+
+}
+
 #myTable {
     border-collapse: collapse; /* Collapse borders */
     width: 100%; /* Full-width */

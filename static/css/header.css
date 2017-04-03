@@ -1,0 +1,24 @@
+.vertical-align {
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical-align > [class^="col-"],
+.vertical-align > [class*=" col-"] {
+  display: flex;
+  align-items: center;     /* Align the flex-items vertically */
+  justify-content: center; /* Optional, to align inner flex-items
+                              horizontally within the column  */
+}
+
+.btn-primary{
+	background-color: #04356b;
+}
+
+.seq-preload-circle{
+	fill: #04356b;
+}
+
+body {
+	z-index: 100;
+}

@@ -34,3 +34,13 @@ after: function(carousel) {}
 .carousel-inner .prev		 { left: -25%; }
 .carousel-control 			 { width:  4%; }
 .carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}*/
+
+
+body {
+	min-height: 100%;
+	top: 0;
+	bottom: 0;
+	position: relative;
+	background-color: #EEEEEE;
+
+}

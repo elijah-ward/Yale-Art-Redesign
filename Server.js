@@ -5,11 +5,19 @@ var router = express.Router();
 var path = __dirname + '/views/';
 var template_path = __dirname + '/templates/'
 
+app.set('port', (process.env.PORT || 5000));
+
 /********************
 *		ROUTES		*
 *********************/
 
+/* -------------------- HOME -------------------- */
+
 router.get("/",function(req,res){
+	res.sendFile(path + "index.html");
+});
+
+router.get("/HomePage",function(req,res){
 	res.sendFile(path + "index.html");
 });
 
@@ -33,29 +41,37 @@ router.get("/courses", function(req,res){
   res.sendFile(path + "courses.html")
 });
 
+router.get("/Resources", function(req,res){
+  res.sendFile(path + "Resources.html")
+});
+
+/* ---- */
+
 router.get("/studentprofiles", function(req,res) {
-  res.sendFile(path + "studentprofiles.html
+  res.sendFile(path + "studentprofiles.html")
+});
+
 /* -------------------- PROGRAMS --------------------- */
 
 router.get("/ProgramsHomePage", function(req,res){
 	res.sendFile(path + "ProgramsHomePage.html")
 });
 
-// router.get("/SculptureProgram", function(req,res){
-// 	res.sendFile(path + "SculptureProgram.html")
-// });
+router.get("/ProgramsSculpture", function(req,res){
+	res.sendFile(path + "ProgramsSculpture.html")
+});
 
-// router.get("/PaintingProgram", function(req,res){
-// 	res.sendFile(path + "PaintingProgram.html")
-// });
+router.get("/ProgramsPainting", function(req,res){
+	res.sendFile(path + "ProgramsPainting.html")
+});
 
-// router.get("/PhotographyProgram", function(req,res){
-// 	res.sendFile(path + "PhotographyProgram.html")
-// });
+router.get("/ProgramsPhotography", function(req,res){
+	res.sendFile(path + "ProgramsPhotography.html")
+});
 
-// router.get("/FilmAndMovieMakingProgram", function(req,res){
-// 	res.sendFile(path + "FilmAndMovieMakingProgram.html")
-// });
+router.get("/ProgramsFilmAndMovieMaking", function(req,res){
+	res.sendFile(path + "ProgramsFilmAndMovieMaking.html")
+});
 
 router.get("/ProgramsGraphicDesign", function(req,res){
 	res.sendFile(path + "ProgramsGraphicDesign.html")
@@ -87,8 +103,7 @@ router.get("/AdmissionApplication", function(req,res){
 	res.sendFile(path + "AdmissionApplication.html")
 });
 
-/* --------------------------------------------------- */
-
+/* ----------------------- MISC ----------------------- */
 
 router.get("/Test", function(req,res){
 	res.sendFile(path + "test.html") /* Test -erase- */
@@ -107,6 +122,6 @@ app.use("*",function(req,res){
   res.sendFile(path + "404.html");
 });
 
-app.listen(3000,function(){
-  console.log("Site served at Port 3000");
+app.listen(app.get('port'),function(){
+  console.log("Site served at Port "+app.get('port'));
 });

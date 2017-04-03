@@ -68,6 +68,7 @@ var coursesdatabase = {
                   "description": "The focus of this course is on locating and hybridizing printmaking techniques that visually and conceptually enhance the student’s work. We examine various techniques including pigment printouts on canvas, screen printing (both photo and non-photo based) on various materials, collaged prints (collograph, etching, and embossment) on canvas or over frames, toner transfers, laser cutting/etching as substrate and object, CNC milling, and the integration of 3-D printing and vacuum bag molding with painting. Demos, slide lectures, readings, and weekly group critiques in the printshop and studios complement the work."
                 },
                 {
+
                   "courseCode": "Painting 545",
                   "program": "Painting/Printmaking",
                   "courseName": "Individual Criticism",
@@ -90,6 +91,7 @@ var coursesdatabase = {
                   "courseCredit": "1.5",
                   "instructor": "Pr. Monica DeChiara",
                   "description": "Nervous when speaking in public? Then this course is for you— a public speaking course for artists and designers. Each student will perform a number of informal and formal speaking situations, including critique, job interview, etc. Students will play themselves as well as various alter egos in order to hone both the form (body language, eye contact, voice projection, verbal litter) and content (diction, clarity, substance) of what they say. The class focuses on the spoken rather than the written word, and takes to heart Maurice Merleau Ponty’s declaration that: “It is in the actual practice of speaking that I learn to understand.” (Phenomenology of Language) Guest speakers with various public speaking experiences and styles will help us master the craft. You will emerge more prepared for many future careers: artist, designer and teacher amongst them."
+
                 }
 
             ]

@@ -6,16 +6,18 @@
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="/static/css/main.css">
 
-<script src="/static/js/loadTemplates.js"></script>
+
 
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="static/css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="static/css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="static/css/ArtsHomePage.css"> <!-- Resource style -->
 	<script src="static/js/modernizr.js"></script> <!-- Modernizr -->
+
+	<script src="/static/js/loadTemplates.js"></script>
 
 <script src="static/js/jquery-2.1.4.js"></script>
 <script src="static/js/jquery.mobile.custom.min.js"></script>
@@ -27,45 +29,58 @@
 <div id="header"></div>
 
 <!--pictures-->
-<div class="container-fluid">
-	<div class="row no-gutter" id="Yale-core">
+<div class="container-fluid" style="height: 60vh;">
+	<div class="row no-gutter" style="height: 60vh;" id="Yale-core">
 		<div class="col-20" id="Yale-core-first-element">
-			<a href="#">
+			<a href="/ArtShowcase">
 				<img src="/static/img/sculpture_cropped.jpg" id="sculpture" class="img-responsive" onmouseover="this.src='/static/img/sculpture_cropped_glow.jpg';" onmouseout="this.src='/static/img/sculpture_cropped.jpg';">
+				<div class="img-caption">
+					<h2>Sculpture</h2>
+				</div>
 			</a>
 		</div>
 		<div class="col-20" id="Yale-core-element">
-			<a href="#">
+			<a href="/ArtShowcase">
 				<img src="/static/img/painting_cropped.jpg" id="painting" class="img-responsive" onmouseover="this.src='/static/img/painting_cropped_glow.jpg';" onmouseout="this.src='/static/img/painting_cropped.jpg';">
+				<div class="img-caption">
+					<h4>Painting</h4>
+				</div>
 			</a>
 		</div>
 		<div class="col-20" id="Yale-core-element">
-			<a href="#">
+			<a href="/ArtShowcase">
 				<img src="/static/img/photographer_cropped.jpg" id="photographer" class="img-responsive" onmouseover="this.src='/static/img/photographer_cropped_glow.jpg';" onmouseout="this.src='/static/img/photographer_cropped.jpg';">
+				<div class="img-caption">
+					<h3>Photography</h3>
+				</div>
 			</a>
 		</div>
 		<div class="col-20" id="Yale-core-element">
-			<a href="#">
+			<a href="/ArtShowcase">
 				<img src="/static/img/film_cropped.jpg" id="film" class="img-responsive" onmouseover="this.src='/static/img/film_cropped_glow.jpg';" onmouseout="this.src='/static/img/film_cropped.jpg';">
+				<div class="img-caption">
+					<p>Film</p>
+				</div>
 			</a>
 		</div>
 		<div class="col-20" id="Yale-core-last-element">
-			<a href="#">
+			<a href="/ArtShowcase">
 				<img src="/static/img/graphic_design_cropped.jpg" id="graphicdesign" class="img-responsive" onmouseover="this.src='/static/img/graphic_design_cropped_glow.jpg';" onmouseout="this.src='/static/img/graphic_design_cropped.jpg';">
+				<div class="img-caption">
+					<h1>Graphic Design</h1>
+				</div>
 			</a>
 		</div>
 	</div>
-</div>
 
 <!-- events collapsing panel-->
-<div class="container-fluid">
 	<div class="row">
 		<div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-10 col-md-10 col-sm-10 col-xs-10">
 			 <div class="panel-group">
 			 	<div class="panel panel-default">
 				  	<a data-toggle="collapse" href="#events">
 				    	<div class="panel-heading text-center">
-				        <font size="5" color="#04326b" face="PT Serif">Events</font>
+				        <font size="5" color="#04326b" face="PT Serif">Gallery Events</font>
 				        <span class="glyphicon glyphicon-chevron-down"></span>
 				    	</div>
 				    </a>
@@ -78,17 +93,20 @@
 									<div class="events-wrapper">
 										<div class="events">
 											<ol>
-												<li><a href="#0" data-date="22/03/2017" class="selected">Mar 22</a></li>
-												<li><a href="#0" data-date="24/03/2017">Mar 24</a></li>
-												<li><a href="#0" data-date="25/03/2017">Mar 25</a></li>
-												<li><a href="#0" data-date="27/03/2017">Mar 27</a></li>
-												<li><a href="#0" data-date="28/03/2017">Mar 28</a></li>
-												<li><a href="#0" data-date="30/03/2017">Mar 30</a></li>
-												<li><a href="#0" data-date="02/04/2017">Apr 2</a></li>
-												<li><a href="#0" data-date="04/04/2017">Apr 4</a></li>
-												<li><a href="#0" data-date="05/04/2017">Apr 5</a></li>
-												<li><a href="#0" data-date="08/04/2017">Apr 8</a></li>
-												<li><a href="#0" data-date="10/04/2017">Apr 10</a></li>
+												<li><a href="#0" data-date="01/04/2017" class="selected">Mon 1</a></li>
+												<li><a href="#0" data-date="02/04/2017">Tue 2</a></li>
+												<li><a href="#0" data-date="03/04/2017">Wed 3</a></li>
+												<li><a href="#0" data-date="04/04/2017">Thu 4</a></li>
+												<li><a href="#0" data-date="05/04/2017">Fri 5</a></li>
+												<li><a href="#0" data-date="06/04/2017">Sat 6</a></li>
+												<li><a href="#0" data-date="07/04/2017">Sun 7</a></li>
+												<li><a href="#0" data-date="08/04/2017">Mon 8</a></li>
+												<li><a href="#0" data-date="09/04/2017">Tue 9</a></li>
+												<li><a href="#0" data-date="10/04/2017">Wed 10</a></li>
+												<li><a href="#0" data-date="11/04/2017">Thu 11</a></li>
+												<li><a href="#0" data-date="12/04/2017">Fri 12</a></li>
+												<li><a href="#0" data-date="13/04/2017">Sat 13</a></li>
+												<li><a href="#0" data-date="14/04/2017">Sun 14</a></li>
 											</ol>
 
 											<span class="filling-line" aria-hidden="true"></span>
@@ -103,99 +121,143 @@
 
 								<div class="events-content">
 									<ol>
-										<li class="selected" data-date="22/03/2017">
-											<em>March 22, 2017</em>
-											<p>Sample event information</p>
-										</li>
-
-										<li data-date="24/03/2017">
-											<h2>Event title here</h2>
-											<em>March 24, 2017</em>
+										<li class="selected" data-date="01/04/2017">
+											<h2>Gallery 1</h2>
+											<em>April 1, 2017 - 2:00pm to 5:00pm</em>
 											<p>	
 												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
 											</p>
-										</li>
 
-										<li data-date="25/03/2017">
-											<h2>Event title here</h2>
-											<em>March 25, 2017</em>
-											<p>	
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-											</p>
-										</li>
-
-										<li data-date="27/03/2017">
-											<h2>Event title here</h2>
-											<em>March 27, 2017</em>
-											<p>	
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-											</p>
-										</li>
-
-										<li data-date="28/03/2017">
-											<h2>Event title here</h2>
-											<em>March 28, 2017</em>
-											<p>	
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-											</p>
-										</li>
-
-										<li data-date="30/03/2017">
-											<h2>Event title here</h2>
-											<em>March 30, 2017</em>
+											<h2>Gallery 2</h2>
+											<em>April 1, 2017 - 6:00pm to 9:00pm</em>
 											<p>	
 												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
 											</p>
 										</li>
 
 										<li data-date="02/04/2017">
-											<h2>Event title here</h2>
-											<em>April 2, 2017</em>
+											<h2>No Galleries this day.</h2>
+										</li>
+
+										<li data-date="03/04/2017">
+											<h2>Gallery 1</h2>
+											<em>April 3, 2017 - 12:30pm to 8:30pm</em>
 											<p>	
 												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
 											</p>
 										</li>
 
 										<li data-date="04/04/2017">
-											<h2>Event title here</h2>
-											<em>April 4, 2017</em>
+											<h2>No Galleries this day.</h2>
+										</li>
+
+										<li data-date="05/04/2017">
+											<h2>Gallery 1</h2>
+											<em>April 5, 2017 - 12:30pm to 5:30pm</em>
 											<p>	
 												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
 											</p>
 										</li>
 
-										<li data-date="05/04/2017">
-											<h2>Event title here</h2>
-											<em>April 5, 2017</em>
+										<li data-date="06/04/2017">
+											<h2>Gallery 1</h2>
+											<em>April 6, 2017 - 12:30pm to 3:30pm</em>
+											<p>	
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+											</p>
+
+											<h2>Gallery 2</h2>
+											<em>April 6, 2017 - 4:30pm to 8:30pm</em>
+											<p>	
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+											</p>
+										</li>
+
+										<li data-date="07/04/2017">
+											<h2>Gallery 1</h2>
+											<em>April 7, 2017</em>
 											<p>	
 												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
 											</p>
 										</li>
 
 										<li data-date="08/04/2017">
-											<h2>Event title here</h2>
-											<em>April 8, 2017</em>
+											<h2>No Galleries this day.</h2>
+										</li>
+
+										<li data-date="09/04/2017">
+											<h2>No Galleries this day.</h2>
+										</li>
+
+										<li data-date="10/04/2017">
+											<h2>Gallery 1</h2>
+											<em>April 10, 2017 - 12:30pm to 8:30pm</em>
 											<p>	
 												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
 											</p>
 										</li>
 
-										<li data-date="10/04/2017">
-											<h2>Event title here</h2>
-											<em>April 10, 2017</em>
+										<li data-date="11/04/2017">
+											<h2>No Galleries this day.</h2>
+										</li>
+
+										<li data-date="12/04/2017">
+											<h2>Gallery 1</h2>
+											<em>April 12, 2017 - 12:30pm to 04:30pm</em>
+											<p>	
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+											</p>
+
+											<h2>Gallery 2</h2>
+											<em>April 12, 2017 - 05:30pm to 08:30pm</em>
 											<p>	
 												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
 											</p>
 										</li>
+
+										<li data-date="13/04/2017">
+											<h2>Gallery 1</h2>
+											<em>April 13, 2017 - 10:30am to 02:30pm</em>
+											<p>	
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+											</p>
+
+											<h2>Gallery 2</h2>
+											<em>April 13, 2017 - 03:30pm to 05:30pm</em>
+											<p>	
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+											</p>
+
+											<h2>Gallery 3</h2>
+											<em>April 13, 2017 - 06:30pm to 08:30pm</em>
+											<p>	
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+											</p>
+										</li>
+
+										<li data-date="14/04/2017">
+											<h2>Gallery 1</h2>
+											<em>April 14, 2017 - 09:30am to 12:30pm</em>
+											<p>	
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+											</p>
+										</li>
+
 									</ol>
 								</div> <!-- .events-content -->
 						</section>
 				
+					<div style="float:right;">
+					<button type="button" class="btn btn-primary btn-info" onclick="location.href='http://artscalendar.yale.edu/'">
+					<h4>More Events<span class="glyphicon glyphicon-chevron-right"></span></h4>
+					</button>
+					</div>
 						
 			      	</div>
 			    </div>
 			</div>
 		</div>
+  	</div>
   	</div>
 </div>
 

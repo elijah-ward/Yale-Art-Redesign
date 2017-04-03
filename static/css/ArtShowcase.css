@@ -31,6 +31,11 @@ li {
 	padding: 2vh;
 	background-color: #E0E0E0;
 	display: flex;
+	justify-content: center;
+}
+
+.seq-preload-circle{
+	fill: #04356b;
 }
 
 .frame{
@@ -42,22 +47,29 @@ li {
 	background-color: #E0E0E0;
 }
 
-.gallery > img{
+.gallery > a > .img-responsive{
 	max-height: 20vh;
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
 	box-shadow: 0 0 10px black;
 	z-index: 0;
+	display: flex;
+	flex-direction: row;
+	margin-right: 3vw;
 }
 
-.gallery > a > img{
+
+div a img{
 	max-height: 20vh;
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
 	box-shadow: 0 0 10px black;
 	z-index: 0;
+	display: flex;
+	margin-left: 1vh;
+	margin-right: 1vh;
 }
 
 
@@ -84,4 +96,42 @@ a: link{
 
 a: hover{
 	color: #444400;
+}
+
+.btn-primary{
+  background: #04356b !important;
+}
+
+/* Starting positions */
+#sequence h2,
+#sequence h3 {
+  opacity: 0;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+#sequence h2 {
+  -webkit-transform: translate(0, -20px);
+  transform: translate(0, -20px);
+}
+
+#sequence h3 {
+  -webkit-transform: translate(0, 20px);
+  transform: translate(0, 20px);
+}
+
+/* Animate in positions for content */
+#sequence .seq-in h2,
+#sequence .seq-in h3 {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/* Animate out positions for content */
+#sequence .seq-out h2,
+#sequence .seq-out h3 {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
