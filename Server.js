@@ -1,6 +1,7 @@
 var express = require("express");
 var morgan = require("morgan");
 var app = express();
+var favicon = require('serve-favicon');
 var router = express.Router();
 var path = __dirname + '/views/';
 var template_path = __dirname + '/templates/'
@@ -107,6 +108,8 @@ app.use(morgan('tiny'));
 
 app.use(express.static('static'));
 app.use("/static", express.static('static'));
+
+app.use(favicon(__dirname+ "/src/Yale_School_of_Art.ico"));
 
 app.use("/static", express.static('/node_modules/sequencejs'));
 

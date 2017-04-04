@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node Server.js"
   },
-"engines": {
-	"node": "4.5.0",
-	"npm": "3.10.9"
-},
+  "engines": {
+    "node": "4.5.0",
+    "npm": "3.10.9"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/elijah-ward/Yale-Art-Redesign.git"
@@ -25,6 +25,7 @@
     "bootstrap": "^3.3.7",
     "express": "^4.15.2",
     "morgan": "^1.8.1",
-    "sequencejs": "^2.0.0"
+    "sequencejs": "^2.0.0",
+    "serve-favicon": "^2.4.2"
   }
 }
