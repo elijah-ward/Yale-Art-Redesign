@@ -1,6 +1,11 @@
 # Yale Art Redesign
 A redesign of the Yale Art department website. Group project for CS4474: Human Computer Interaction.
 
+## Deployed Heroku Instance
+
+To view the deployed site, follow this link: https://stormy-brushlands-53780.herokuapp.com/
+
+
 ## Running the App
 
 1. Install node if you haven't already. (npm comes with node)
