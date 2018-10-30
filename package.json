@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/elijah-ward/Yale-Art-Redesign#readme",
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^4.1.2",
     "express": "^4.15.2",
     "morgan": "^1.8.1",
     "sequencejs": "^2.0.0",
